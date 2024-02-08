@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajay Music Player</title>
+    <!-- it is connected to two stylesheets -->
+    <link rel="stylesheet" type="text/css" href="main.css"><!-- this is the main stylesheet -->
+    <!-- desktop first approach is used for the same. -->
+    <link rel="stylesheet" type="text/css" href="primary page responsive.css"><!-- this is the style sheet with all the media queries -->
+    <!-- this script is just for font awesome fonts -->
+    <script src="https://kit.fontawesome.com/2d9b67a497.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navigation-bar">
+        <!--This div contains the logo and title of the page-->
+        <div class="title-combo">
+            <div class="website-logo">
+                <img src="media/website_logo.png">
+            </div>
+            <div class="website-name">
+                <h2>
+                    Sukesh
+                </h2>
+                <h6>
+                    Music Player
+                </h6>
+            </div>
+        </div>
+        <div class="favs">
+            <h4>
+                Favourites
+            </h4>
+        </div>
+        <!-- this is for search bar -->
+        <div class="search-bar">
+            <div>
+                <!-- magnifying glass- search icon -->
+                <i class="fas fa-search search-ico"></i>
+            </div>
+            <input type="text" name="search" placeholder="Search">
+            <div>
+                <!-- mic icon -->
+                <i class="fas fa-microphone mic-ico"></i>
+            </div>
+        </div>
+        <!-- this is for notification bell -->
+        <div class="notification-bell">
+            <img src="media/bell_icon.png"> Notifications
+
+        </div>
+        <!-- this is for profile picture -->
+        <div class="profile-picture">
+            <img src="media/profile_picture.png">
+        </div>
+    </nav>
+</body>
+<main>
+    <aside class="aside section-1">
+         <!-- this is for the carousel -->
+         <div class="outer-carousel">
+            <div class="carousel">
+                <!-- these are the 3 images in the carousel -->
+                <img src="media/crousel/carousel1.jpg">
+                <img src="media/crousel/carousel2.jpg">
+                <img src="media/crousel/carousel3.jpg">
+            </div>
+        </div>
+        <!-- this is the latest release section -->
+        <div class="latest-release">
+            <h1 style="margin-bottom: 12px;">
+                Latest Release
+            </h1>
+        <!-- contents of latest release -->
+            <div class="latest-release-content">
+                <!-- 1st card -->
+                <div class="card">
+                    <div>
+                        <!-- image corresponding to the card -->
+                        <img src="media/songs/willow.jpeg">
+                        <!-- play button, which will be shown on hover on the card image -->
+                        <div class="play-button">
+                            <i class="fas fa-play" style="width:45%; height:45%; display:inline-block"></i>
+                        </div>
+                    </div>
+                    <!-- Song description -->
+                    <div class="song-description">
+                        <h3>
+                            Willow
+                        </h3>
+                        <p>
+                            Dec , 2020
+                        </p>
+                    </div>
+                    <!--  three dots for the options  -->
+                    <div class="options">
+                        <label for="latest-release-checkbox"><i class="fas fa-ellipsis-h"></i></label>
+                        <input type="checkbox" id="latest-release-checkbox">
+                        <div class="latest-release-dropdown">
+                            <div class="drop-item">
+                                <!-- if user clicks on play now button, then be taken to the single playlist page -->
+                                <p><i class="fas fa-play-circle"></i> <a href="Single Playlist Screen.html">Play
+                                        Now</a></p>
+                            </div>
+                            <hr>
+                            <div class="drop-item">
+                                <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                            </div>
+                            <hr>
+                            <div class="drop-item">
+                                <p><i class="fas fa-music"></i> Add to playlist</p>
+                            </div>
+                            <hr>
+                            <div class="drop-item">
+                                <p><i class="fas fa-info-circle"></i> Get Info</p>
+                            </div>
+                        </div>
+                        <!-- duration of the song -->
+                        <p>
+                            3:35
+                        </p>
+                    </div>
+                </div>
+                <!-- second card -->
+                <div class="card">
+                    <div>
+                        <img src="media/songs/Weeknd.jpg">
+                        <div class="play-button">
+                            <i class="fas fa-play" style="width:45%; height:45%; display:inline-block"></i>
+                        </div>
+                    </div>
+                    <div class="song-description">
+                        <h3>
+                           Blinding Lights
+                        </h3>
+                        <p>
+                            Dec, 2020
+                        </p>
+                    </div>
+                    <div class="options">
+                        <label for="latest-release-checkbox2"><i class="fas fa-ellipsis-h"></i></label>
+                        <input type="checkbox" id="latest-release-checkbox2">
+                        <div class="latest-release-dropdown">
+                            <div class="drop-item">
+                                <p><i class="fas fa-play-circle"></i> <a href="Single Playlist Screen.html">Play
+                                        Now</a></p>
+                            </div>
+                            <hr>
+                            <div class="drop-item">
+                                <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                            </div>
+                            <hr>
+                            <div class="drop-item">
+                                <p><i class="fas fa-music"></i> Add to playlist</p>
+                            </div>
+                            <hr>
+                            <div class="drop-item">
+                                <p><i class="fas fa-info-circle"></i> Get Info</p>
+                            </div>
+                        </div>
+                        <p>
+                            3:20
+                        </p>
+                    </div>
+                </div>
+                <!-- third card -->
+                <div class="card">
+                    <div>
+                        <img src="media/songs/DaBaby.jpg">
+                        <div class="play-button">
+                            <i class="fas fa-play" style="width:45%; height:45%; display:inline-block"></i>
+                        </div>
+                    </div>
+                    <div class="song-description">
+                        <h3>
+                            ROCKSTAR
+                        </h3>
+                        <p>
+                            Dec, 2020
+                        </p>
+                    </div>
+                    <div class="options">
+                        <label for="latest-release-checkbox3"><i class="fas fa-ellipsis-h"></i></label>
+                        <input type="checkbox" id="latest-release-checkbox3">
+                        <div class="latest-release-dropdown">
+                            <div class="drop-item">
+                                <p><i class="fas fa-play-circle"></i> <a href="Single Playlist Screen.html">Play
+                                        Now</a></p>
+                            </div>
+                            <hr>
+                            <div class="drop-item">
+                                <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                            </div>
+                            <hr>
+                            <div class="drop-item">
+                                <p><i class="fas fa-music"></i> Add to playlist</p>
+                            </div>
+                            <hr>
+                            <div class="drop-item">
+                                <p><i class="fas fa-info-circle"></i> Get Info</p>
+                            </div>
+                        </div>
+                        <p>
+                            3:02
+                        </p>
+                    </div>
+                </div>
+                <!-- fourth card -->
+                <div class="card">
+                    <div>
+                        <img src="media/songs/dynamite.jpg">
+                        <div class="play-button">
+                            <i class="fas fa-play" style="width:45%; height:45%; display:inline-block"></i>
+                        </div>
+                    </div>
+                    <div class="song-description">
+                        <h3>
+                            Dynamite
+                        </h3>
+                        <p>
+                            Dec, 2020
+                        </p>
+                    </div>
+                    <div class="options">
+                        <!-- NOTE THAT POSITION OF OPTIONS DIV IS RELATIVE -->
+                        <label for="latest-release-checkbox4"><i class="fas fa-ellipsis-h"></i></label>
+                        <input type="checkbox" id="latest-release-checkbox4">
+                        <div class="latest-release-dropdown">
+                            <!-- POSITION OF LATEST RELEASE DROPDOWN IS ABSOLUTE TO THE RELATIVE OPTIONS. THIS IS VERY IMPORTANT AS THE DROPDOWN BOX SHOULD BE PLACED RELATIVE TO THE PARTICULAR ITEM IN THE LATEST RELEASE SECTION. IT SHOULD NOT BE ABSAOLUTE TO THE WHOLE LATEST RELEASE SECTION. THROUGH THIS PROJECT i UNDERSTOOD THE NEED OF POSITION:ABSOLUTE. ABSOLUTE POSITION AND RELATIVE ARE GENERALLY USED TOGETHER-->
+                            <div class="drop-item">
+                                <p><i class="fas fa-play-circle"></i> <a href="Single Playlist Screen.html">Play
+                                        Now</a></p>
+                            </div>
+                            <hr>
+                            <div class="drop-item">
+                                <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                            </div>
+                            <hr>
+                            <div class="drop-item">
+                                <p><i class="fas fa-music"></i> Add to playlist</p>
+                            </div>
+                            <hr>
+                            <div class="drop-item">
+                                <p><i class="fas fa-info-circle"></i> Get Info</p>
+                            </div>
+                        </div>
+                        <p>
+                            3:19
+                        </p>
+                    </div>
+                </div>
+                <!-- fifth card -->
+                <div class="card">
+                    <div>
+                        <img src="media/songs/shit.png">
+                        <div class="play-button">
+                            <i class="fas fa-play" style="width:45%; height:45%; display:inline-block"></i>
+                        </div>
+                    </div>
+                    <div class="song-description">
+                        <h3>
+                            WAP
+                        </h3>
+                        <p>
+                            Dec, 2020
+                        </p>
+                    </div>
+                    <div class="options">
+                        <label for="latest-release-checkbox5"><i class="fas fa-ellipsis-h"></i></label>
+                        <input type="checkbox" id="latest-release-checkbox5">
+                        <div class="latest-release-dropdown">
+                            <div class="drop-item">
+                                <p><i class="fas fa-play-circle"></i> <a href="Single Playlist Screen.html">Play
+                                        Now</a></p>
+                            </div>
+                            <hr>
+                            <div class="drop-item">
+                                <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                            </div>
+                            <hr>
+                            <div class="drop-item">
+                                <p><i class="fas fa-music"></i> Add to playlist</p>
+                            </div>
+                            <hr>
+                            <div class="drop-item">
+                                <p><i class="fas fa-info-circle"></i> Get Info</p>
+                            </div>
+                        </div>
+                        <p>
+                            4:44
+                        </p>
+                    </div>
+                    
+                </div>
+                <!-- sixth card -->
+                <div class="card">
+                    <div>
+                        <img src="media/songs/falling.jpg">
+                        <div class="play-button">
+                            <i class="fas fa-play" style="width:45%; height:45%; display:inline-block"></i>
+                        </div>
+                    </div>
+                    <div class="song-description">
+                        <h3>
+                            Falling
+                        </h3>
+                        <p>
+                            Dec, 2020
+                        </p>
+                    </div>
+                    <div class="options">
+                        <label for="latest-release-checkbox6"><i class="fas fa-ellipsis-h"></i></label>
+                        <input type="checkbox" id="latest-release-checkbox6">
+                        <div class="latest-release-dropdown">
+                            <div class="drop-item">
+                                <p><i class="fas fa-play-circle"></i> <a href="Single Playlist Screen.html">Play
+                                        Now</a></p>
+                            </div>
+                            <hr>
+                            <div class="drop-item">
+                                <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                            </div>
+                            <hr>
+                            <div class="drop-item">
+                                <p><i class="fas fa-music"></i> Add to playlist</p>
+                            </div>
+                            <hr>
+                            <div class="drop-item">
+                                <p><i class="fas fa-info-circle"></i> Get Info</p>
+                            </div>
+                        </div>
+                        <p>
+                          2:39
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </aside>
+</main>

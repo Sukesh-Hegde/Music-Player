@@ -1,0 +1,317 @@
+:root {
+
+	--background-image: url(media/background_image/2725544.jpg);
+	--music-themes-background-image: linear-gradient(
+		90deg,
+		#833ab4,
+		#fd1d1d,
+		#fcb045
+	);
+}
+body {
+	background-image: var(--background-image);
+	margin: 0px;
+	font-family: "Segoe UI", Arial, sans-serif;
+	color: white;
+}
+/* removing margin for all the textual elements */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0px;
+}
+/* top navigation bar */
+.navigation-bar {
+	height: auto;
+    width: auto;
+    background-image: linear-gradient(180deg, black, rgba(0, 0, 0, 0));
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    /* box-sizing: border-box; */
+    padding-left: 5%;
+    padding-right: 5%;
+    /* transition: all ease-in-out 1s; when the navbar loads, every property transits for 1s */
+}
+
+/* all the divs inside the navigation bar should be placed side by side*/
+.navigation-bar > div {
+	display: inline-block;
+}
+
+/*  website logo image  */
+.website-logo img {
+    height: 50px;
+	width: 50px;
+	border-radius: 100%;	
+}
+/* website title and general description */
+.title-combo > div {
+	vertical-align: middle;
+	display: inline-block;
+}
+
+/* search bar */
+.search-bar {
+	width: 20%;
+    position: relative;
+}
+/* changing the default style of the input bar */
+.search-bar input {
+	width: 100%;
+	font-size: 16px;
+	text-decoration: none;
+	border-radius: 18px;
+	border: none;
+	padding: 5px;
+	font-weight: 500;
+	text-align: center;
+	transition: all ease-in-out 0.1s;
+}
+/* search icon for input bar */
+.search-ico {
+	color: rgba(0, 0, 0, 0.5);
+}
+/* mic icon for input */
+.mic-ico {
+	color: rgba(0, 0, 0, 0.5);
+}
+/* search icon */
+.search-bar > div:nth-child(1) {
+	display: inline-block;
+	position: absolute;
+	width: min-content;
+	left: 5%;
+	top: 10%;
+	transition: all ease-in-out 0.1s;
+}
+/* mic icon */
+.search-bar > div:nth-child(3) {
+	display: inline-block;
+    position: absolute;
+	width: min-content;
+	right: 0%;
+	top: 11%;
+	transition: all ease-in-out 0.1s;
+}
+/* when the user clicks on the search bar, there should be no blue outlining */
+input:focus {
+	outline: none;
+}
+/* notification bell image */
+.notification-bell img {
+	width: 40px;
+	height: 30px;
+}
+/* animation for bell image */
+@keyframes ringing_bell {
+	0% {
+		transform: rotate(-15deg);
+	}
+	50% {
+		transform: rotate(15deg);
+	}
+	100% {
+		transform: rotate(-15deg);
+	}
+}
+/* notification bell image */
+.notification-bell img {
+	width: 40px;
+	height: 30px;
+	animation-name: ringing_bell;
+	animation-duration: 0.4s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count:infinite;
+	animation-delay: 10s;
+	position: first;
+}
+/* profile picture of the user */
+.profile-picture img {
+	width: 45px;
+	height: 45px;
+	border-radius: 100%;
+}
+
+/* compleates navigation bar */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+main {
+	width: 100%;
+	padding: 0% 3%;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	transition: all ease-in-out 1s;
+}
+.aside {
+	display: inline-block;
+	overflow: hidden;
+}
+.section-1 {
+	width: 70%;
+	height: 86vh;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+/*hide the scrollbar*/
+.section-1::-webkit-scrollbar {
+	display: none;
+}
+/* general properties for images in the carousel */
+.carousel img {
+	height: 15vw;
+	width: 22.5vw;
+	transition: all cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.2s;
+}
+.outer-carousel {
+	position: relative;
+	left: 8vw;
+	margin-top: 5%;
+	transition: all ease-in-out 1s;
+}
+/* carousel */
+.carousel {
+	position: absolute;
+	left: 4%;
+	width: 70%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	overflow: visible;
+	justify-content: space-around;
+}
+
+
+.carousel img:hover {
+	z-index: 4;
+	box-shadow: 0px 0px 12px 0.1px black;
+	height: 18vw;
+	width: 27vw;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* Latest release */
+.latest-release {
+	position: relative;
+	top: 20vw;
+	height: auto;
+	width: 100%;
+	box-sizing: border-box;
+}
+/* container of the latest release part should be of type flex */
+.latest-release-content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+/* Latest release card */
+.card {
+	display: flex;
+	flex-direction: row;
+	transition: box-shadow ease-in-out 0.1s;
+}
+
+/* images in the cards of the latest release section */
+.card img {
+	width: 100px;
+	height: 100px;
+	z-index: 1;
+}
+/* all the components of the latest release part */
+.latest-release-content > div {
+	/*  border:1px solid white; */
+	height: 100px;
+	width: 47%;
+	margin: 5px 0px;
+}
+/* hovering effects */
+.card:hover {
+	box-shadow: 0px 0px 2px 1px white;
+}
+/* this is the play button which will be visible only on hover */
+.play-button {
+	width: 100%;
+	height: 85%;
+	position: relative;
+	top: -104%;
+	color: rgba(255, 255, 255, 0);
+	/* note that its opacity will be 0 normally */
+	background-color: rgba(0, 0, 0, 0);
+	font-size: 0px;
+	padding-top: 15%;
+	text-align: center;
+	z-index: 5;
+	transition: all ease-in-out 0.1s;
+}
+/* actual play icon from font awesome */
+.play-button i {
+	padding-top: 45%;
+}
+/* hovering effect for the play button */
+.play-button:hover {
+	color: rgba(255, 255, 255, 0.9);
+	background-color: rgba(0, 0, 0, 0.5);
+}
+/* description of the song in the card, which will contain the song nae and author */
+.song-description {
+	margin: auto 10%;
+}
+/* options is the class for the 3 dots which needs to be clicked to trigger the latest release drop down menu */
+.options {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap-reverse;
+	text-align: right;
+	margin-left: auto;
+	margin-right: 2%;
+	margin-top: 2%;
+}
+/* this is for the latest release drop down menu */
+.latest-release-dropdown {
+	position: absolute;
+	background-color: darkslateblue;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	opacity: 0;
+	width: 0px;
+	height: 0px;
+	top: 20px;
+	right: 0px;
+	overflow: hidden;
+	z-index: 2;
+	border: 1px solid black;
+	box-shadow: 0px 0px 2px 1px black;
+	transition: all ease-in-out 0.3s;
+}
+/* icon in the latest release drop down */
+.fa-ellipsis-h {
+	cursor: pointer;
+}
+/* this input is for the latest release drop down */
+input[type="checkbox"] {
+	display: none;
+}
+/* checking it, will trigger the latest release dropdown */
+input[type="checkbox"]:checked ~ .latest-release-dropdown {
+	width: max-content;
+	height: auto;
+	opacity: 1;
+	padding: 5px;
+}
+/* options in the lastest release drop down */
+.drop-item p {
+	text-align: center;
+}
