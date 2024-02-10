@@ -1,6 +1,6 @@
 :root {
 
-	--background-image: url(media/background_image/2725544.jpg);
+	--background-image: url(media/background_image/background.jpg);
 	--music-themes-background-image: linear-gradient(
 		90deg,
 		#833ab4,
@@ -32,7 +32,7 @@ p {
 .navigation-bar {
 	height: auto;
     width: auto;
-    background-image: linear-gradient(180deg, black, rgba(0, 0, 0, 0));
+    background-image: linear-gradient(180deg, #313053de, #020204);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -635,7 +635,7 @@ input[type="checkbox"]:checked ~ .latest-release-dropdown {
 label[for="more"] {
 	display: none;
 	position: absolute;
-	right: 0%;
+	right: 0%
 	top: 20%;
 	padding-bottom: 5px;
 	z-index: 4;
@@ -800,7 +800,7 @@ footer {
 	bottom: 1px;
 	width: 100%;
 	height: 60px;
-	background-color: #282828;
+    background-image: linear-gradient(180deg, #313053de, #020204);
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
