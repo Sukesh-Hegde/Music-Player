@@ -14,6 +14,10 @@ body {
 	font-family: "Segoe UI", Arial, sans-serif;
 	color: white;
 }
+a {
+    color: white;
+	text-decoration: none;
+}
 /* removing margin for all the textual elements */
 h1,
 h2,
@@ -499,7 +503,6 @@ input[type="checkbox"]:checked ~ .latest-release-dropdown {
 	justify-content: space-around;
 }
 /* music themes -2 */
-/* music themes has two parts the class with name just "music themes, is the uppper section with the gradient bakcground" */
 /* this is the second section of music themes */
 .music-themes-2 {
 	position: relative;
